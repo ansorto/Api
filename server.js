@@ -13,7 +13,7 @@ app.use(boyParse.json())
 app.use(boyParse.urlencoded({ extended: false }))
 app.use(cors({
     credentials: true,
-    origin: ["http://localhost:3000", "https://mern-restaurant-m7n1.onrender.com","http://localhost:5173"]
+    origin: ["http://localhost:3000", "https://mern-restaurant-m7n1.onrender.com","http://localhost:5173","https://res-cueva.onrender.com"]
 }));
 
 
