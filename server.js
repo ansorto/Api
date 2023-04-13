@@ -12,7 +12,8 @@ const rutaUsuario = require("./routes/usuario");
 app.use(boyParse.json())
 app.use(boyParse.urlencoded({ extended: false }))
 app.use(cors({
-    credentials: true
+    credentials: true,
+    origin:["http://localhost:3000","https://mern-restaurant-m7n1.onrender.com"]
 }));
 
 
