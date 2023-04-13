@@ -13,7 +13,7 @@ app.use(boyParse.json())
 app.use(boyParse.urlencoded({ extended: false }))
 app.use(cors({
     credentials: true,
-    origin:["http://localhost:3000","https://mern-restaurant-m7n1.onrender.com"]
+    origin: ["http://localhost:3000", "https://mern-restaurant-m7n1.onrender.com","http://localhost:5173"]
 }));
 
 
@@ -25,7 +25,7 @@ app.use('/api/pedidos', rutaPedidos);
 app.use('/api/usuario', rutaUsuario);
 // 
 
-const port= process.env.PORT || 3000
+const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log("SERVER IS RUNNING ON PORT " + port);
 })
