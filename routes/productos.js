@@ -33,8 +33,8 @@ router.post("/agregar", (req, res) => {
         image: base64Image
     })
     nuevoProducto.save().then((succes) => {
-
-        res.send("Usuario agregado correctamente" + succes)
+        console.log("AGREGADO", success);
+        res.send("Producto agregado correctamente" + succes)
     }).catch((err) => {
         res.send("Ha oucurrido un error al agregar correctamente" + err)
 
