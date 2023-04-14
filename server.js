@@ -10,7 +10,7 @@ const rutaPedidos = require("./routes/pedidos");
 const rutaUsuario = require("./routes/usuario");
 
 app.use(boyParse.json())
-app.use(boyParse.urlencoded({ extended: false }))
+app.use(boyParse.urlencoded({ extended: false, limit: '50mb' }))
 app.use(cors());
 
 
