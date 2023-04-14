@@ -36,7 +36,8 @@ router.post("/agregar", (req, res) => {
         console.log("AGREGADO", success);
         res.send("Producto agregado correctamente" + succes)
     }).catch((err) => {
-        res.send("Ha oucurrido un error al agregar correctamente" + err)
+        console.log(err);
+        res.send("Ha oucurrido un error al agregar" + err)
 
     })
 })
